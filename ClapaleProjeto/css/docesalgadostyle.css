@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Reem Kufi;
+}
+body{
+    background-color: #efefef;
+}
+.container{
+    width: 960px;
+    margin:auto;
+    background-image: url(../imagens/fundo-teste.png);
+}
+.titulo{
+    color: #E36414;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.cards{
+    width: 312px;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cards img{
+    width: 100%;
+    height: 301px;
+}
+.cards p{
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    height: 80px;
+}
+.colunas{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.pedido img{
+    width: 118px;
+    height: 42px;  
+}
+.pedido{
+    text-align: center;
+}
+.produto{
+    width: 312px;
+    height: 62px;
+    background-color: #3CB8B3;
+    color: #ffffff;
+}
+.produto h2{
+    font-weight: normal;
+    text-align: center;
+    line-height: 65px;
+}
+footer{
+    height: 500px;
+    background-color: #F87C0A;
+    position: relative;
+}
+.footer-txt{
+    padding-right: 20px;
+}
+.footerimg img{
+    position: relative;
+    height: 372px;
+    width: 360px;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+footer h3{  /*quem somos*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 48px;
+    margin-block-start: 40px;
+    margin-block-end: 0px;
+}
+footer h4{   /*clapale doces*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer h5{  /*email*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer p{  /*siganos */
+    color: #ffffff;
+    font-weight: normal;
+    text-align: justify;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.siga{
+    display: flex;
+}
+#zap{
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    top: 357px;
+    right: 330px;
+}
+#insta{
+    position: absolute;
+    width: 44px;
+    height: 32px;
+    top: 357px;
+    right: 275px;
+}
+#face{
+    position: absolute;
+    width: 39px;
+    height: 32px;
+    top: 357px;
+    right: 228px;
+}
+#fale{
+    position: absolute;
+    width: 149px;
+    height: 52px;
+    top: 347px;
+    right: 70px;
+}
+.rodape{
+    width: 460px;
+}
+.rodape img{
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+    }
+    .colunas{
+        display: block;
+    }
+    .cards{
+        width: 100%;
+    }
+    .produto{
+        width: 100%;    
+    }
+    .footerimg img{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        padding-left: 10px;
+    }
+}

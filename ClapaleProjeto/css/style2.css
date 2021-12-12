@@ -1,0 +1,161 @@
+.principal li:hover{
+    background-color: #069;
+}
+.fa-angle-double-down, .fa-cart-arrow-down{
+    padding-left: 10px;
+}
+
+/* POP UP Pedidos - Quando clica em pedidos abre um pop up para cadastrar pedidos*/
+/* CÓDIGO ABAIXO SE REFERE SOMENTE AO POP-UP E CADASTRO DO MESMO */
+
+*{
+    font-family: Reem Kufi;
+}
+h2{
+    font-size: 16px;
+    color: #023047;
+}
+.encomenda, .logotipo{
+    position: absolute;
+}
+.encomenda img{
+    width: 120px;
+    margin-top: 270px;
+    margin-left: 500px;
+}
+.logotipo img{
+    width: 160px;
+    margin-top: 50px;
+    margin-left: 470px;
+}
+label{
+    margin-left: 15px;
+    /* margin-top: 4px; */
+    display: block;   
+}
+input[type="text"], [type="email"], [type="number"], [type="date"] {  
+    width: 250px;
+    margin-left: 10px;
+    border: 1px solid #9d0208;
+    padding: 4px;  /*parte interna do input*/   
+    /* margin-top: 3px; */
+}
+#qtd, #sabor{
+    width: 100px;
+}
+select{
+    width: 130px;
+    height: 25px;
+}
+#telefone{
+    padding: 3px;
+    margin-left: 10px;
+}
+h2, select, textarea{
+    margin-left: 15px;
+}
+textarea{
+    width: 400px;
+    height: 60px;
+    resize: none;
+    border: 1px solid white;
+}
+fieldset{
+    border: 1px solid white;
+    width: 97%;
+    height: 250px;
+    margin-bottom: 5px;
+}
+.finalizar{
+    height: 60px;
+}
+.finalizar input{
+    margin-left: 10px;
+}
+.box{
+    width: 750px;
+    margin: auto;
+    background-color: rgba(94, 181, 181, .7);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.cor{
+    width: 100px;
+    background-color: #f48c06;
+    color: white;
+}
+/* POP UP */
+#bg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .8);
+    position: fixed;
+    display: none;
+}
+#bg:target{ /*Quando o display for acionado, será block*/
+    display: block;
+}
+#bg:target ~ .box{  /*margem entre o topo e o começo da imagem*/
+    top: 50px;   /*define a margem do topo*/
+    transition: all .3s;
+    transition-delay: .3s;
+}
+.box{
+    width: 750px;
+    height: 480px;
+    position: absolute;
+    margin-left: -360px;
+    left: 50%;
+    top: -490px;  /*esconde o elemento na parte superior com um tamanho definindo*/
+}
+.box form{  /*o elemento que pertence ao box*/
+    width: 100%;
+    position: absolute;
+}
+#close{
+    color: #f48c06;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+    border-radius: 20%;
+}
+#close:hover{
+    opacity: .8;
+}
+@media screen and (max-width: 600px){
+    .box{
+        width: 400px;
+        height: 480px;
+        margin-left: 30px;
+        left: 0%;
+        top: -490px;
+    }
+    fieldset{
+        width: 395px;
+    }
+    textarea{
+        width: 250px
+    }
+ 
+    input[type="text"], [type="email"], [type="number"], [type="date"] {  
+        width: 200px;
+    }
+    .encomenda img{
+        width: 60px;
+        margin-top: 330px;
+        margin-left: 275px;
+    }
+    .logotipo img{
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 250px;
+    }
+}

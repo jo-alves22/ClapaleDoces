@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Reem Kufi;
+}
+body{
+    background-color: #efefef;
+}
+.container{
+    width: 960px;
+    margin:auto;
+    background-image: url(../imagens/fundo-teste.png);
+}
+.titulo{
+    height: 250px;
+    position: relative;
+   
+}
+.titulo-txt{
+    position: absolute;
+    color: #E36414;
+    top: 85px;
+    left: 350px;
+    font-size: 25px;
+}
+.conheca img{
+    position: absolute;
+    width: 184px;
+    top: 20px;
+    left: 730px;
+}
+.slogan h3{
+    position: absolute;
+    top: 140px;
+    left: 240px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: #3CB8B3;
+    font-weight: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cards{
+    width: 312px;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cards img{
+    width: 100%;
+    height: 295px;
+}
+.cards p{
+    font-size: 18px;
+    padding: 5px 30px 5px 30px;
+    height: 80px;
+}
+.colunas{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.nome-bolo{
+    width: 312px;
+    height: 62px;
+    background-color: #3CB8B3;
+    color: #ffffff;
+}
+.nome-bolo h2{
+    font-weight: normal;
+    text-align: center;
+    line-height: 65px;
+}
+.pedido{
+    text-align: center;
+}
+.pedido img{
+    width: 118px;
+    height: 42px;
+   
+}
+footer{
+    height: 500px;
+    background-color: #F87C0A;
+    position: relative;
+}
+.footer-txt{
+    padding-right: 20px;
+}
+.footerimg img{
+    position: relative;
+    height: 372px;
+    width: 360px;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+footer h3{  /*quem somos*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 48px;
+    margin-block-start: 40px;
+    margin-block-end: 0px;
+}
+footer h4{   /*clapale doces*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 55px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer h5{  /*email*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer p{  /*siganos */
+    color: #ffffff;
+    font-weight: normal;
+    text-align: justify;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.siga{
+    display: flex;
+}
+#zap{
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    top: 357px;
+    right: 330px;
+}
+#insta{
+    position: absolute;
+    width: 44px;
+    height: 32px;
+    top: 357px;
+    right: 275px;
+}
+#face{
+    position: absolute;
+    width: 39px;
+    height: 32px;
+    top: 357px;
+    right: 228px;
+}
+#fale{
+    position: absolute;
+    width: 149px;
+    height: 52px;
+    top: 347px;
+    right: 70px;
+}
+.rodape{
+    width: 460px;
+}
+.rodape img{
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        text-align: center;
+        height: 120px;
+    }
+    .titulo-txt{
+        position: static;
+        color: #E36414;
+        font-size: 25px;
+    }
+    .conheca img{
+        display: none;
+    }
+    .slogan h3{
+        position: static;
+        top: 140px;
+        left: 0px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+        color: #3CB8B3;
+        font-weight: normal;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .colunas{
+        display: block;
+    }
+    .cards{
+        width: 100%;
+    }
+    .nome-bolo{
+        width: 100%;
+        height: 62px;
+        background-color: #3CB8B3;
+        color: #ffffff;
+    }
+    .footerimg img{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        padding-left: 10px;
+    }
+}

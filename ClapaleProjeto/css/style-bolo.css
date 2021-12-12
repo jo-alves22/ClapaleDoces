@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Reem Kufi;
+}
+header{
+    background: #F87C0A;
+}
+.container{
+    width: 960px;
+    margin:auto;
+}
+img{
+    margin-top: 5px;
+    width: 100px;
+}
+.colunas{
+    display: flex;
+    justify-content: space-between;
+}
+.icone-redes{  /*nome mudado*/
+    text-align: right;
+    margin: 10px 5px;
+}
+.icone-redes svg{  /*oba, mesmo acima*/
+    color: white;
+    padding-right: 5px;
+}
+.principal li a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 10px;  /*teste margim no normal- não responsa*/
+}
+.principal li{   /*esta parte esta certa, pois vai remover o verde*/
+    display: inline-block;
+    padding-right: 15px;
+    border-bottom: solid 1px #ccc;
+}
+.principal{  /*deixar desta forma, assim da para fazer a animação rolando*/
+    height: 40px;
+}
+.delicias-itens{  /*sobrepoe a parte laranja quando clica*/
+    display: none;
+    position: absolute;
+}
+.delicias-itens li{  /*fundo do item delicias  aqui vai os efeito OBS*/
+    display: block;
+    background-color: rgba(16,16,16,.7);
+    width: 100%;  /*deixou o fundo cinza ocupando todo o espaço*/
+}
+.delicias-itens li a{  /*acertei a margem interna dos itens */
+    margin-left: 10px;
+}
+.delicias:hover .delicias-itens{
+    display: block;
+}
+.bt-menu{
+    display: none;
+    color: white;
+    text-align: right;
+    margin-right: 5px;
+}
+iframe{
+    width: 100%;
+    height: 2270px;  /* altura no normal - Se alter o tamanho do hero no carrosel, avaliar o tamanho do iframe*/
+}
+@media screen and (max-width: 600px){
+    iframe{
+        height: 5180px;   /* tamanho total no responsa*/
+    }
+    .container{
+        width: 100%;
+    }
+    .bt-menu{
+        display: block;
+    }
+    img{  /*testar com um tamanho definindo de imagem*/
+        margin-left: 5px;
+    }
+    .principal{
+        display: none;
+        position: relative;  /* para ficar na frente do carrosel- teste  */
+    }
+    .principal li{ /*deixa um abaixo do outro*/
+        display: block;
+        background-color: rgba(16,16,16,.8);
+    }
+    .principal li a{    /*deixei uma pargem para os item principam, verde*/
+        font-size: 14px;  /*tamanho da fonte no reponsa*/
+    }
+    .nav-revelar{
+        display: block;
+    }
+    .delicias-itens{
+        position: relative;  /* sobrepoe mas faz um leve movimento  */
+    }
+    .delicias-itens li{
+        background-color: rgba(16,16,16,.7);
+    }
+}

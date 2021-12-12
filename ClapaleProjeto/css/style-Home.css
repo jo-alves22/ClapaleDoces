@@ -1,0 +1,255 @@
+*{
+    font-family: Reem Kufi;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ced4da;
+}
+.container{
+    background-image: url(../imagens/fundo-teste.png);
+    width: 960px; 
+    margin: auto;  
+}
+
+iframe{
+    width: 100%;
+    height: 510px;  /*deixar 510px*/
+}
+h1{  /*letras laranja*/
+    font-size: 48px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-weight: normal;
+}
+.galeria{
+    height: 100px;
+    position: relative;
+}
+.galeria-txt{
+    position: absolute;
+    /* top: 10px; */
+    left: 200px;
+    color: #E36414;
+}
+.galeriaimge{ /*desenhos das letras*/
+    position: absolute;
+    top: 15px;
+    left: 120px;
+}
+.galeriaimgd{
+    position: absolute;
+    top: 15px;
+    left: 730px;
+}
+.cards{
+    width: 460px;
+}
+.cards img{
+    width: 100%;
+    height: 350px;
+}
+.cards figure{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.cards h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #3CB8B3;
+    color: #ffffff;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.colunas{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+article{
+    height: 1155px;
+}
+.chama{ /*imagem pedido*/
+    background: url(../imagens/bolorodape.png);
+    position: relative;
+    /* height: 230px; */
+    /* background-size: 100%; */
+}
+.chama img{
+    position: relative;
+    width: 135px;
+    top: 5px;
+    left: 65px;
+}
+.chama-txt{
+    position: relative;
+    bottom: 10px;
+    left: 50px;
+}
+.chama-txt h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.chama figure{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px
+}
+
+footer{
+    height: 460px;
+    background-color: #F87C0A;
+    position: relative;
+}
+.footerimg img{
+    position: relative;
+    height: 372px;
+    width: 360px;
+    top: 25px;
+    margin-left: 40px;
+}
+footer h3{  /*quem somos*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 48px;
+    margin-block-start: 50px;
+    margin-block-end: 0px;
+}
+footer h4{   /*clapale doces*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-block-end: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer h5{  /*email*/
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer p{  /*siganos */
+    color: #ffffff;
+    font-weight: normal;
+    text-align: justify;
+    padding-right: 40px;
+}
+.siga{
+    display: flex;
+}
+#zap{
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    top: 347px;
+    right: 330px;
+}
+#insta{
+    position: absolute;
+    width: 44px;
+    height: 32px;
+    top: 347px;
+    right: 275px;
+}
+#face{
+    position: absolute;
+    width: 39px;
+    height: 32px;
+    top: 347px;
+    right: 228px;
+}
+#fale{
+    position: absolute;
+    width: 149px;
+    height: 52px;
+    top: 337px;
+    right: 70px;
+}
+.rodape{
+    width: 460px;
+}
+.rodape img{
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .hero {
+        width: 100%;
+        height: 260px;  
+        background-position: center;
+        background-size: 100%;  
+    }
+    .hero img{
+        width: 100%;
+    }
+    .galeria{
+        height: 50px;
+    }
+    .galeriaimge{
+        display: none;
+    }
+    .galeriaimgd{
+        display: none;
+    }
+    .galeria-txt{
+        position: relative;
+        margin: 0px;
+        color: #E36414;
+    }
+    .galeria-txt{
+        position: static;
+        top: 20px;
+        left: 10px;
+        color: #E36414;
+    }
+    h1{  /*galeria das delicias*/
+        font-size: 34px;
+        text-align: center;
+    }
+    .cards{  /*área das imagens*/
+        width: 100%;  /*para ficar centralizada e margem a direita*/
+    }
+    .cards h2{  /*produtos*/
+        font-size: 34px;
+    }
+    .colunas{
+        display: block;
+    }
+    article{
+        height: 1770px;
+    }
+    .chama{
+        background-position: center;
+        height: 110px; 
+        background-size: 100%;
+    }
+    .chama img{
+        width: 70px;
+    }
+    .chama-txt h3{
+        font-size: 21px;
+        margin-top: 15px;
+    }
+    .footerimg img{
+        display: none;
+    }
+    .chama-txt{
+        position: relative;
+        bottom: 20px;
+        left: 20px;
+    }  
+}
